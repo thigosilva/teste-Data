@@ -8,14 +8,14 @@ namespace Sample.Test
 
         public SampleServiceTest()
         {
-            //arrange (qualque tipo de variável necessária para montar o teste)
+            
             _sampleService = new SampleService();
         }
 
         [Fact]
         public void Sum_MultipleValues_ReturnSuccess()
         {
-            //arrange
+            
             var value1 = 2;
             var value2 = 4;
             var value3 = 6;
@@ -25,11 +25,11 @@ namespace Sample.Test
             var withTotal = 34;
             var withoutTotal = 32;
 
-            //act
+            
             var resultWithTotal = _sampleService.Sum(total, value1, value2, value3, value4, value5);
             var resultWithoutTotal = _sampleService.Sum(value1, value2, value3, value4, value5);
 
-            //Assert
+            
             Assert.Equal(withTotal, resultWithTotal);
             Assert.Equal(withoutTotal, resultWithoutTotal);
         }
@@ -41,10 +41,10 @@ namespace Sample.Test
         [InlineData(2)]
         public void IsEven_ValuesLessThan3_ReturnTrue(int value)
         {
-            //act (chamada do método a ser testado, logo a unidade)
+            
             var result = _sampleService.IsEven(value);
 
-            //assert (o cenário proposto no resultado do teste)
+            
             Assert.True(result);
         }
 
@@ -55,10 +55,10 @@ namespace Sample.Test
         [InlineData(1)]
         public void IsEven_ValuesLessThan3_ReturnFalse(int value)
         {
-            //act (chamada do método a ser testado, logo a unidade)
+            
             var result = _sampleService.IsEven(value);
 
-            //assert (o cenário proposto no resultado do teste)
+            
             Assert.False(result);
         }
 
@@ -69,10 +69,10 @@ namespace Sample.Test
         [InlineData(1)]
         public void IsOdd_ValuesLessThan3_ReturnTrue(int value)
         {
-            //act (chamada do método a ser testado, logo a unidade)
+            
             var result = _sampleService.IsOdd(value);
 
-            //assert (o cenário proposto no resultado do teste)
+            
             Assert.True(result);
         }
 
@@ -83,10 +83,10 @@ namespace Sample.Test
         [InlineData(2)]
         public void IsOdd_ValuesLessThan3_ReturnFalse(int value)
         {
-            //act (chamada do método a ser testado, logo a unidade)
+            
             var result = _sampleService.IsOdd(value);
 
-            //assert (o cenário proposto no resultado do teste)
+            
             Assert.False(result);
         }
 

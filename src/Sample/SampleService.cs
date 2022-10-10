@@ -4,17 +4,13 @@ namespace Sample
 {
     public class SampleService
     {
-        //TODO: Criar um método que subtrai passando um total ou não e a partir do
-        //segundo parâmetro podendo colocar varios números para realizar a subtração entre
-        //eles ou a partir do total
+        
         public decimal Subtract(decimal total = 0, params decimal[] values)
         {
             throw new NotImplementedException();
         }
 
-        //TODO: Criar um método que soma passando um total ou não e a partir do
-        //segundo parâmetro podendo colocar varios números para realizar a subtração entre
-        //eles ou a partir do total
+        
         public decimal Sum(decimal total = 0, params decimal[] values)
         {
             var result = total;
